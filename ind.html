@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Huffman Algo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<link rel="icon" href="/images/favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+
+<script src="huffman.js"></script>
+
+<body>
+<center><h4 style="margin-top: 35px;" >Type Text for compression</h4></center>
+<div class="single-flex-container">
+
+	<div class="column-text">
+		<table style="text-align:center;width:100%;">
+		<tr><td>
+			<textarea style="margin-top: 35px;" id="huffInput" cols="60" rows="20" ></textarea><br>
+			<button  class="btn btn-success" onclick="huffGo()">Compress</button></td><td>
+			<textarea style="margin-top: 35px;"  id="huffDeInput" cols="60" rows="20" style="word-break:break-all;"></textarea><br>
+			<button class="btn btn-primary" onclick="huffDeGo()">Decompress</button></td></tr>
+		<tr><td colspan="2" id="codeselect">
+			<span id="huffOutput"></td></tr></table>
+	</div>
+
+</div>
+</body>
+</html>
